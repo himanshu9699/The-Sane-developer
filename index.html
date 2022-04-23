@@ -1,0 +1,505 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,600&display=swap" rel="stylesheet">
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        
+    }
+    body{
+        font-family: 'Raleway', sans-serif;
+    }
+    .background-container{
+        background-image: url(./images/background\ img\ \(1\).png);
+    }
+    .navbar{
+        display: flex;
+        
+        height: 18vh;
+        align-items: center;
+        width: 100%;
+    }
+    .nav-heading{
+        font-size: 30px;
+        margin-left: 30px;
+    }
+    .nav-btn-group{
+
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-left: 65%;
+    }
+    .nav-link{
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .nav-btn{
+        border: none;
+        background-color: rgb(88, 88, 255);
+        border-radius: 8px;
+        height: 50px;
+        width: 140px;
+        font-size: 20px;
+        color: white;
+
+    }
+    .nav-link,.nav-btn:hover{
+        cursor: pointer;
+    }
+    .nav-link:hover{
+        text-decoration: underline;
+    }
+    .main-container{
+        height: 82vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        
+    }
+    .main-heading{
+        font-size: 40px;
+    }
+    .main-content{
+        margin-top: 20px;
+    }
+    .main-btn{
+        margin-top: 30px;
+        border: none;
+        font-size: 20px;
+        color: white;
+        background-color: rgb(88, 88, 255);
+        height: 58px;
+        border-radius: 10px;
+        width: 180px;
+    }
+    .main-btn:hover{
+        cursor: pointer;
+    }
+    .div1{
+        width: 100%;
+        height: 55vh;
+        background-color: rgb(88, 88, 255);
+        color: aliceblue;
+        display: flex;
+        
+    }
+    .div1-heading{
+        font-size: 30px;
+        height: 100%;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50;
+        
+    }
+    .div1-content{
+        width: 50%;
+        height: 100%;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .div1-link{
+        color: white;
+        text-decoration: none;
+        display: flex; 
+        align-items: flex-start;
+        margin-top: 20px;
+    }
+    .div1-h2{
+        font-size: 20px;
+        text-decoration: underline;
+        margin-right: 10px;
+    }
+    .div2{
+        width: 100%;
+        height: 55vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .div2-heading{
+        font-size: 20px;
+    }
+    .div2-content{
+        margin-top: 20px;
+    }
+    .div2-link-container{
+        margin-top: 20px;
+    }
+    .div2-link{
+        color: black;
+        font-size: 20px;
+    }
+    .card-container{
+            height: 110vh;
+            width: 100%;
+            background-color: rgb(88, 88, 255);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .card-heading{
+            color: white;
+            
+        }
+        .card-content{
+            margin-top: 15px;
+            color: white;
+        }
+        .card{
+            height: 240px;
+            width: 190px;
+            background-color: white;
+            border-radius:10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .card-item-content{
+            margin-top: 20px;
+        }
+        .card-item-container{
+            display: flex;
+            margin-top: 120px;
+            
+            width: 100%;
+            justify-content: center;
+        }
+        .or{
+            display: flex;
+            align-items: center;
+            color: white;
+            margin-left: 35px;
+            margin-right: 35px;
+        }
+        .arrow{
+            display: flex;
+            align-items: center;
+            color: white;
+            font-size: 30px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        .link-to-form{
+            color: white;
+            text-decoration: none;
+        }
+        .showcase-container{
+            height: 110vh;
+            width: 100%;
+            display: flex;
+        }
+        .showcase-left{
+            height: 100%;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .showcase-left-heading{
+            font-family: 'Raleway', sans-serif;
+            font-size: 25px;
+        }
+        .showcase-btn{
+            height: 60px;
+            width: 140px;
+            margin-top: 30px;
+            border-radius: 8px;
+            background-color: rgb(88, 88, 255);
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            border: none;
+        }
+        .showcase-right{
+            width: 50%;
+            height: 100%;
+            display: flex;
+        }
+  
+        .showcase-img-container{
+            height: 100%;
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        .showcase-img-item{
+            overflow: hidden;
+            height: 180px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+        }
+        .showcase-right-content{
+            width: 60%;
+        }
+        .showcase-img-title{
+            height: 25%;
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            justify-content: center;
+        }
+        .img-dec{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Roboto', sans-serif;
+        }
+        .hex-name p{            
+            margin-left: 10px;
+        }
+        .img-color{
+            height: 30px;
+            width: 30px;
+            
+            border-radius: 50%;
+        }
+        .img-name{
+            margin-top: 18px;
+            font-size: 20px;
+            
+        }
+        .img-purple{
+            background-color: #afb1bd;
+        }
+        .img-red{
+            background-color: #d06b70;
+
+        }
+        .img-green{
+            background-color: #87c0ad;
+        }
+        .img-blue{
+            background-color: #b9c9de;
+        }
+        .bottom{
+            height: 100vh;
+            
+        }
+        .upperdiv{
+            height: 90vh;
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+        }
+        .bottom-div1{
+            
+            height: 90vh;
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .bottom-div1-heading{
+            color: rgb(88, 88, 255);
+        }
+        .bottom-div1-content{
+            margin-top: 20px;
+        }
+        .bottom-div2{
+            height: 90vh;
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+        align-items: flex-start;
+    justify-content: center;
+        }
+        .bottom-div2-title{
+            
+            width: 32vh;
+            
+            margin-bottom: 30px;
+        }
+        .bottom-div2-link{
+            margin-top: 10px;
+            color: rgb(88, 88, 255);
+            text-decoration: none;
+        }
+        .bottom-div2-link:hover{
+            text-decoration: underline;
+        }
+        .lower-div-heading{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+</style>
+</head>
+
+
+
+<body>
+    
+    <div class="background-container">
+        <nav class="navbar">
+            <h2 class="nav-heading">Ucode</h2>
+            <div class="nav-btn-group">
+                <a href="" class="nav-link"><b>Tools</b></a>
+                <a href="" class="nav-link"><b>About</b></a>
+            <button class="nav-btn">Sign In</button>
+            </div>
+            
+        </nav>
+        <div class="main-container">
+            <h1 class="main-heading">Let's Design</h1>
+            <p class="main-content"><b>Let's create a website that we both <br> &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;must be proud of</b></p>
+            <button class="main-btn"><a class="link-to-form" href="./form.html">Get Started</a></button>
+        </div>
+    </div>
+    <div class="div-container">
+        <div class="div1">
+            <div class="div1-heading">The Freedom to Create <br> the website you want</div>
+            <div class="div1-content">
+                <p class="div1-para">
+                    Building and design the website weather you're <br>promoting your buisness. showcasing your work <br>opening your store or starting a blog You can build it all.
+                </p>
+                <a class="div1-link" href="./form.html"><h2 class="div1-h2">Get Started</h2> → </a>
+            </div>
+        </div>
+        <div class="div2">
+            <div class="div2-heading">
+                <h1>Professionally Designed <br> &nbsp; &nbsp; Website Templates</h1>
+            </div>
+            <div class="div2-content">
+                <p>Choose from the number of customizable website templates <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;that are built to meet your buisness needs</p>
+            </div>
+            <div class="div2-link-container"><b><a class="div2-link" href="./silder.html">Show some website templates</a></b></div>
+        </div>
+    </div>
+    <div class="showcase-container">
+        <div class="showcase-left">
+            <div class="showcase-left-heading">
+                <h1>&nbsp;All of your website <br>moods at one place</h1>
+            </div>
+            <button class="showcase-btn">
+                Explore
+            </button>
+        </div>
+        <div class="showcase-right">
+            <div class="showcase-img-container">
+                <div class="showcase-img-item">
+                    <img src="./images/showcase/WhatsApp Image 2022-04-23 at 9.38.15 AM (1).jpeg" height="309px" width="479px" alt="">
+                </div>
+                
+                <div class="showcase-img-item">
+                    <img src="./images/showcase/WhatsApp Image 2022-04-23 at 9.38.16 AM.jpeg" height="309px" width="479px" alt="">
+                </div>
+                <div class="showcase-img-item">
+                    <img src="./images/showcase/WhatsApp Image 2022-04-23 at 9.38.17 AM.jpeg" height="309px" width="479px" alt="">
+                </div>
+                <div class="showcase-img-item">
+                    <img src="./images/showcase/WhatsApp Image 2022-04-23 at 9.38.15 AM.jpeg" height="309px" width="479px" alt="">
+                </div>
+            </div>
+            <div class="showcase-right-content">
+                <div class="showcase-img-title">
+                    <div class="img-dec"><div class="img-color img-purple"></div class="hex-name"><p>#B5B7C3</p></div>
+                    <div class="img-name">Premium</div>
+
+                </div>
+                <div class="showcase-img-title">
+                    <div class="img-dec"><div class="img-color img-red">&nbsp;</div class="hex-name"><p>#B5B7C3</p></div>
+                    <div class="img-name">Stylish</div>
+
+                </div>
+                <div class="showcase-img-title">
+                    <div class="img-dec"><div class="img-color img-green"></div class="hex-name"><p>#B5B7C3</p></div>
+                    <div class="img-name">Colourful</div>
+
+                </div>
+                <div class="showcase-img-title">
+                    <div class="img-dec"><div class="img-color img-blue"></div class="hex-name"><p>#B5B7C3</p></div>
+                    <div class="img-name">Different</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card-container">
+        
+        <h1 class="card-heading">How to Create a Dazzling Website</h1>
+        <p class="card-content">Follow these 3 simple steps to create a website today</p>
+    <div class="card-item-container">
+        <div class="card">
+            <img src="https://img.icons8.com/ios-filled/50/000000/circled-right-2.png"/>
+            <p class="card-item-content"><b>Sign In</b></p>
+        </div>    
+        <p class="arrow">→</p>
+        <div class="card">
+            <img height="45px" width="45px" src="https://img.icons8.com/ios-filled/50/000000/edit--v1.png"/>
+            <p class="card-item-content"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Edit <br> pre-designed <br>&nbsp;&nbsp;&nbsp;Templates
+                
+            </b></p>
+        </div>  
+        <p class="or">or</p>
+        <div class="card">
+            <img src="https://img.icons8.com/ios-filled/50/000000/plus.png"/>
+            <p class="card-item-content"><b>Fill Form for <br>your Website</b></p>
+        </div>  
+        <p class="arrow">→</p>
+        <div class="card">
+            <img height="45px" width="45px" src="https://img.icons8.com/external-vitaliy-gorbachev-fill-vitaly-gorbachev/60/000000/external-cube-graphic-design-vitaliy-gorbachev-fill-vitaly-gorbachev.png"/>
+            <p class="card-item-content"><b>Get your code</b></p>
+        </div>  
+    </div>
+</div>
+<div class="bottom">
+    <div class="upperdiv">
+        <div class="bottom-div1">
+            <div class="bottom-div-heading">
+                <h1 class="bottom-div1-heading"><b>Ucode Editor</b></h1>
+
+            </div>
+            <p class="bottom-div1-content">&nbsp; Coming soon</p>
+        </div>
+        <div class="bottom-div2">
+            
+            <div class="bottom-div2-title"><h1 class="bottom-div2-heading"><b>Ucode </b></h1></div>
+                <p class="bottom-div2-content">Build and design the website <br>weather you're promoting your <br>buisness,showcasing your work, <br>opening your store or starting a <br>blog You can build it all.</p>
+                <a href="" class="bottom-div2-link">About us</a>
+        </div>
+     
+        
+
+</div>
+<div class="lower-div">
+<hr>
+<div class="lower-div-heading">
+    This Website was designed by <b>&nbsp;Ucode.</b>
+</div>
+</div>
+</div>
+</body>
+</html>

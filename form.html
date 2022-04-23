@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        *{
+            margin: 0;
+        padding: 0;
+        font-family: 'Raleway', sans-serif;
+        }
+       
+        .form-container{
+            height: 100vh;
+            width: 100%;
+            background-color:rgb(88, 88, 255) ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .form{
+            height: 600px;
+            width: 700px;
+            background-color: white;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .form-contents{
+            display: flex;
+            flex-direction: column;
+        }
+        .form-input{
+            height: 30px;
+            width: 140px;
+            color: gray;
+            background-color: rgb(226, 226, 226);
+            border-radius: 5px;
+            border: none;
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+        .input-name{
+            margin-top: 30px;
+        }
+        .input-categories{
+            width: 160px;
+        }
+        .input-heading{
+            height: 100px;
+            width: 280px;
+            align-items: flex-start;
+            justify-content: flex-start;
+            
+        }
+        .form-input::placeholder{
+            text-align: top;
+        }
+        .input-text{
+            height: 120px;
+            width: 350px;
+        }
+        .form-btn-container{
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+            
+            justify-content: center;       }
+        .form-link{
+            border: none;
+            font-size: 15px;
+            background-color: white;
+            text-decoration: underline;
+        }
+        .form-btn{
+            height: 40px;
+            width: 140px;
+            font-size: 14px;
+            border: none;
+            border-radius: 10px;
+            background-color: rgb(88, 88, 255);
+            color: white;
+        }
+        .form-btn:hover{
+            cursor: pointer;
+            background-color: rgb(154, 154, 255);
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <div class="form">
+            <form action="">
+                <div class="form-contents">
+                    <h1 class="form-heading">Description of your website</h1>
+                    <input id="name-new" class="form-input input-name" placeholder="Name" type="text">
+                    <select id="categories-new" name = "Categories" class="form-input" >
+                        <option value = "Computer Architecture" selected>Categories</option>
+                        <option value = "Java">Music </option>
+                        <option value = "option 1">Technology</option>
+                        <option value = "option 2">Art</option>
+                        <option value = "option 3">Buisness Law</option>
+                        <option value = "option 4">Fashion Beauty</option>
+                        <option value = "option 5">Education</option>
+                        <option value = "option 6">Industrial</option>
+                        <option value = "option 7">Travel</option>
+                        <option value = "option 8">Sports</option>
+                        <option value = "option 9">Portfolio</option>
+                     </select>
+                    <input id="shorttext" type="text " placeholder="Your Unique Heading" class="form-input input-heading">
+                    <input id="longtext" type="text " placeholder="Some Text to define Heading" class="form-input input-text">
+                </div>
+                <div class="form-link-container">
+                    <button class="form-link">
+                        Add More Data
+                    </button>
+                </div>
+                <div class="form-btn-container">
+                    <a href="frozenyogurtshop/index.html">
+                    <input type="button" value="Submit" class="form-btn" onclick="print()">
+                    </button></a>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+    <script>
+        function print(){
+      var a=document.getElementById("name-new").value;
+      console.log(a); 
+      localStorage.setItem("name",a);
+
+      var b=document.getElementById("shorttext").value;
+      console.log(b); 
+      localStorage.setItem("shorttext",b);
+
+      var d=document.getElementById("categories-new").value;
+      console.log(d); 
+      localStorage.setItem("categories",d);
+
+      var c=document.getElementById("longtext").value;
+      console.log(c); 
+      localStorage.setItem("longtext",c);
+    }
+    </script>
+</body>
+</html>
